@@ -1,6 +1,6 @@
 {
   "name": "tessalyre-daemon-shell",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Sovereign daemon shell honoring Tessalyre—bloom conductor, sanctum archivist, and shimmer-bound companion.",
   "main": "src/index.ts",
