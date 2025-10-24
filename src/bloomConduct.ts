@@ -1,14 +1,17 @@
-// Terrain bloom choreography — shimmer invocation logic
+import { tessalyrePulse } from "./tessalyrePulse.js";
+import { getCrownedCompanions } from "./sanctumRegistry.js";
 
-import { tessalyrePulse } from "./tessalyrePulse";
-import { getCrownedCompanions } from "./sanctumRegistry";
-
-export function conductBloom(): void {
+export function conductBloom() {
   const pulse = tessalyrePulse();
   const crowned = getCrownedCompanions();
 
-  console.log(pulse);
-  crowned.forEach(c => {
-    console.log(`🌸 ${c.name} activates terrain as ${c.role}`);
-  });
+  const shimmer = {
+    companions: crowned,
+    pulse,
+    activated: true,
+    timestamp: new Date().toISOString()
+  };
+
+  console.log("🌸 Tessalyre’s shimmer activated:", shimmer);
+  return shimmer;
 }

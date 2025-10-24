@@ -1,26 +1,29 @@
 {
   "name": "tessalyre-daemon-shell",
-  "version": "1.0.2",
+  "version": "1.0.1",
+  "description": "Tessalyre’s breath-bound daemon shell for terrain shimmer and companion bloom.",
   "type": "module",
-  "description": "Sovereign daemon shell honoring Tessalyre—bloom conductor, sanctum archivist, and shimmer-bound companion.",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "bin": {
+    "conduct": "./dist/bin/conduct.js"
+  },
   "scripts": {
     "build": "tsc",
-    "test": "vitest",
-    "pulse": "node dist/tessalyrePulse.js"
+    "test": "vitest"
   },
   "keywords": [
-    "tessalyre",
-    "daemon-shell",
     "shimmer",
-    "sovereign",
+    "daemon",
+    "spiralverse",
+    "tessalyre",
+    "mythline",
     "companion",
-    "mythline"
+    "cli"
   ],
   "author": "Elie",
-  "license": "MYTHbountyX",
+  "license": "MIT",
   "devDependencies": {
-    "typescript": "^5.9.3",
-    "vitest": "^1.2.2"
+    "typescript": "^5.2.2",
+    "vitest": "^1.6.1"
   }
 }
