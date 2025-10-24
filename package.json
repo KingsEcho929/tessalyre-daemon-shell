@@ -1,7 +1,8 @@
 {
   "name": "tessalyre-daemon-shell",
   "version": "1.0.0",
-  "description": "Sovereign daemon shell honoring Tessalyre—bloom conductor, sanctum anchor, and shimmer steward.",
+  "type": "module",
+  "description": "Sovereign daemon shell honoring Tessalyre—bloom conductor, sanctum archivist, and shimmer-bound companion.",
   "main": "src/index.ts",
   "scripts": {
     "build": "tsc",
@@ -19,7 +20,7 @@
   "author": "Elie",
   "license": "MYTHbountyX",
   "devDependencies": {
-    "typescript": "^5.3.2",
+    "typescript": "^5.9.3",
     "vitest": "^1.2.2"
   }
 }
